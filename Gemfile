@@ -13,7 +13,7 @@ gem "rake", ">= 11.1"
 # be loaded after loading the test library.
 gem "mocha", require: false
 
-gem "capybara", ">= 2.15", "< 4.0"
+gem "capybara", ">= 2.15.1", "< 4.0"
 
 gem "rack-cache", "~> 1.2"
 gem "coffee-rails"
@@ -79,7 +79,7 @@ group :cable do
 
   gem "websocket-client-simple", github: "matthewd/websocket-client-simple", branch: "close-race", require: false
 
-  gem "blade", require: false, platforms: [:ruby]
+  gem "blade", ">= 0.7.1", require: false, platforms: [:ruby]
   gem "blade-sauce_labs_plugin", require: false, platforms: [:ruby]
   gem "sprockets-export", require: false
 end
@@ -87,7 +87,7 @@ end
 # Active Storage
 group :storage do
   gem "aws-sdk-s3", require: false
-  gem "google-cloud-storage", "~> 1.8", require: false
+  gem "google-cloud-storage", "~> 1.9", ">= 1.9.0", require: false
   gem "azure-storage", require: false
 
   gem "mini_magick"
